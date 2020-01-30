@@ -1,1 +1,9 @@
 c:\users\user1\documents\visual studio 2015\Projects\TwitterApi\TwitterApi\bin\Debug\TwitterApi.exe.config
+c:\users\user1\documents\visual studio 2015\Projects\TwitterApi\TwitterApi\bin\Debug\TwitterApi.exe
+c:\users\user1\documents\visual studio 2015\Projects\TwitterApi\TwitterApi\bin\Debug\TwitterApi.pdb
+c:\users\user1\documents\visual studio 2015\Projects\TwitterApi\TwitterApi\obj\Debug\TwitterApi.csprojResolveAssemblyReference.cache
+c:\users\user1\documents\visual studio 2015\Projects\TwitterApi\TwitterApi\obj\Debug\TwitterApi.Properties.Resources.resources
+c:\users\user1\documents\visual studio 2015\Projects\TwitterApi\TwitterApi\obj\Debug\TwitterApi.csproj.GenerateResource.Cache
+c:\users\user1\documents\visual studio 2015\Projects\TwitterApi\TwitterApi\obj\Debug\TwitterApi.exe
+c:\users\user1\documents\visual studio 2015\Projects\TwitterApi\TwitterApi\obj\Debug\TwitterApi.pdb
+c:\users\user1\documents\visual studio 2015\Projects\TwitterApi\TwitterApi\obj\Debug\TwitterApi.Form1.resources
