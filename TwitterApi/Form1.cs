@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using TwitterApi.Helper;
 
 namespace TwitterApi
 {
@@ -23,6 +17,26 @@ namespace TwitterApi
         }
 
         private void konfigurasyonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string text = richTextBox1.Text;
+            bool control=Validation.RichTextControl(text);
+            if (control)
+            {
+                // Twitter rest api kullanılacak
+            }
+            else
+            {
+                MessageBox.Show("Girilen metin 280 karakterden fazla olamaz ve boş bırakılamaz");
+            }
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
