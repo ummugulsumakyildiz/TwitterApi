@@ -48,7 +48,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtTokenSecret = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.butonKaydet = new System.Windows.Forms.Button();
             this.panelPaylas.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -149,7 +149,7 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.button2);
+            this.tabPage4.Controls.Add(this.butonKaydet);
             this.tabPage4.Controls.Add(this.txtTokenSecret);
             this.tabPage4.Controls.Add(this.label6);
             this.tabPage4.Controls.Add(this.txtAccessToken);
@@ -247,14 +247,15 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "TokenSecret";
             // 
-            // button2
+            // butonKaydet
             // 
-            this.button2.Location = new System.Drawing.Point(229, 296);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 55);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Kaydet";
-            this.button2.UseVisualStyleBackColor = true;
+            this.butonKaydet.Location = new System.Drawing.Point(229, 296);
+            this.butonKaydet.Name = "butonKaydet";
+            this.butonKaydet.Size = new System.Drawing.Size(111, 55);
+            this.butonKaydet.TabIndex = 10;
+            this.butonKaydet.Text = "Kaydet";
+            this.butonKaydet.UseVisualStyleBackColor = true;
+            this.butonKaydet.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
@@ -297,7 +298,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTokenSecret;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button butonKaydet;
     }
 }
 

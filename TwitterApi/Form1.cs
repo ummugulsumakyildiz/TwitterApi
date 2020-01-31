@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using TwitterApi.Helper;
-using System.Data.SqlClient;
+using TwitterApi.DAO;
 
 namespace TwitterApi
 {
@@ -21,7 +21,7 @@ namespace TwitterApi
 
         private void konfigurasyonToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -47,6 +47,26 @@ namespace TwitterApi
         private void panelTweetAl_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AuthInfoDao authDao = new AuthInfoDao();// Veri tabanına kayıt işlemi yapan sınıf 
+            AuthInfo info = new AuthInfo();
+            info.AccessToken = txtAccessToken.Text;
+            info.OAuthConsumerKeyString = txtConsumerKey.Text;
+            info.OAuthConsumerSecretString = txtConsumerSecret.Text;
+            info.TokenSecret = txtTokenSecret.Text;
+            info.GetTwettNumber = int.Parse(txtGetTwettNumber.Text);
+            bool control = authDao.Save(info);
+            if (control)
+            {
+                MessageBox.Show("Kayıt Başarılı");
+            }
+            else
+            {
+                MessageBox.Show("Kayıt Başarısız");
+            }
         }
     }
 }

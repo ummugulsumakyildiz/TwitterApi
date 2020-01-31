@@ -58,6 +58,8 @@
     <Compile Include="AuthInfo.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="DAO\AuthInfoDao.cs" />
+    <Compile Include="DAO\BaseDao.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
