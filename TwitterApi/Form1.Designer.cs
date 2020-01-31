@@ -38,17 +38,17 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtConsumerKey = new System.Windows.Forms.TextBox();
-            this.txtGetTwettNumber = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtConsumerSecret = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtAccessToken = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.butonKaydet = new System.Windows.Forms.Button();
             this.txtTokenSecret = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.butonKaydet = new System.Windows.Forms.Button();
+            this.txtAccessToken = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtConsumerSecret = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtGetTwettNumber = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtConsumerKey = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panelPaylas.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -167,69 +167,15 @@
             this.tabPage4.Text = "Konfigürasyon";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // butonKaydet
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(73, 37);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "OAuthConsumerKeyString";
-            // 
-            // txtConsumerKey
-            // 
-            this.txtConsumerKey.Location = new System.Drawing.Point(283, 37);
-            this.txtConsumerKey.Name = "txtConsumerKey";
-            this.txtConsumerKey.Size = new System.Drawing.Size(255, 22);
-            this.txtConsumerKey.TabIndex = 1;
-            // 
-            // txtGetTwettNumber
-            // 
-            this.txtGetTwettNumber.Location = new System.Drawing.Point(283, 245);
-            this.txtGetTwettNumber.Name = "txtGetTwettNumber";
-            this.txtGetTwettNumber.Size = new System.Drawing.Size(255, 22);
-            this.txtGetTwettNumber.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(73, 248);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "GetTwettNumber ";
-            // 
-            // txtConsumerSecret
-            // 
-            this.txtConsumerSecret.Location = new System.Drawing.Point(283, 83);
-            this.txtConsumerSecret.Name = "txtConsumerSecret";
-            this.txtConsumerSecret.Size = new System.Drawing.Size(255, 22);
-            this.txtConsumerSecret.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(73, 86);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(190, 17);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "OAuthConsumerSecretString";
-            // 
-            // txtAccessToken
-            // 
-            this.txtAccessToken.Location = new System.Drawing.Point(283, 134);
-            this.txtAccessToken.Name = "txtAccessToken";
-            this.txtAccessToken.Size = new System.Drawing.Size(255, 22);
-            this.txtAccessToken.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(73, 134);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 17);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "AccessToken";
+            this.butonKaydet.Location = new System.Drawing.Point(229, 296);
+            this.butonKaydet.Name = "butonKaydet";
+            this.butonKaydet.Size = new System.Drawing.Size(111, 55);
+            this.butonKaydet.TabIndex = 10;
+            this.butonKaydet.Text = "Kaydet";
+            this.butonKaydet.UseVisualStyleBackColor = true;
+            this.butonKaydet.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtTokenSecret
             // 
@@ -247,15 +193,69 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "TokenSecret";
             // 
-            // butonKaydet
+            // txtAccessToken
             // 
-            this.butonKaydet.Location = new System.Drawing.Point(229, 296);
-            this.butonKaydet.Name = "butonKaydet";
-            this.butonKaydet.Size = new System.Drawing.Size(111, 55);
-            this.butonKaydet.TabIndex = 10;
-            this.butonKaydet.Text = "Kaydet";
-            this.butonKaydet.UseVisualStyleBackColor = true;
-            this.butonKaydet.Click += new System.EventHandler(this.button2_Click);
+            this.txtAccessToken.Location = new System.Drawing.Point(283, 134);
+            this.txtAccessToken.Name = "txtAccessToken";
+            this.txtAccessToken.Size = new System.Drawing.Size(255, 22);
+            this.txtAccessToken.TabIndex = 7;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(73, 134);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(93, 17);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "AccessToken";
+            // 
+            // txtConsumerSecret
+            // 
+            this.txtConsumerSecret.Location = new System.Drawing.Point(283, 83);
+            this.txtConsumerSecret.Name = "txtConsumerSecret";
+            this.txtConsumerSecret.Size = new System.Drawing.Size(255, 22);
+            this.txtConsumerSecret.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(73, 86);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(190, 17);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "OAuthConsumerSecretString";
+            // 
+            // txtGetTwettNumber
+            // 
+            this.txtGetTwettNumber.Location = new System.Drawing.Point(283, 245);
+            this.txtGetTwettNumber.Name = "txtGetTwettNumber";
+            this.txtGetTwettNumber.Size = new System.Drawing.Size(255, 22);
+            this.txtGetTwettNumber.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(73, 248);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(119, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "GetTwettNumber ";
+            // 
+            // txtConsumerKey
+            // 
+            this.txtConsumerKey.Location = new System.Drawing.Point(283, 37);
+            this.txtConsumerKey.Name = "txtConsumerKey";
+            this.txtConsumerKey.Size = new System.Drawing.Size(255, 22);
+            this.txtConsumerKey.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(73, 37);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(173, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "OAuthConsumerKeyString";
             // 
             // Form1
             // 

@@ -8,7 +8,6 @@ namespace TwitterApi
 {
     public partial class Form1 : Form
     {
-        List<Panel> panels = new List<Panel>();
         public Form1()
         {
             InitializeComponent();
@@ -26,11 +25,28 @@ namespace TwitterApi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string text = richTextBox1.Text;
+            string text = richTextBox1.Text; 
             bool control=Validation.RichTextControl(text);
             if (control)
             {
                 // Twitter rest api kullanılacak
+
+                // Kullanıcının paylaştığı tweet db ye kaydediliyor
+                TwetterDAO tweetDAO = new TwetterDAO();
+                TweetPost post = new TweetPost();
+                post.tweet = text;
+                post.username = "ummugulsum";
+                post.created_at = DateTime.Now; 
+              
+                bool sonuc = tweetDAO.Save(post);
+                if (sonuc)
+                {
+                    MessageBox.Show("Kayıt başarılı");
+                }
+                else
+                {
+                    MessageBox.Show("Kayıt başarılı değil");
+                }
             }
             else
             {
