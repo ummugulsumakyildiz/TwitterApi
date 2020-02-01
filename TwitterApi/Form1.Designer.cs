@@ -181,7 +181,7 @@
             // 
             this.txtTokenSecret.Location = new System.Drawing.Point(283, 191);
             this.txtTokenSecret.Name = "txtTokenSecret";
-            this.txtTokenSecret.Size = new System.Drawing.Size(255, 22);
+            this.txtTokenSecret.Size = new System.Drawing.Size(463, 22);
             this.txtTokenSecret.TabIndex = 9;
             // 
             // label6
@@ -197,7 +197,7 @@
             // 
             this.txtAccessToken.Location = new System.Drawing.Point(283, 134);
             this.txtAccessToken.Name = "txtAccessToken";
-            this.txtAccessToken.Size = new System.Drawing.Size(255, 22);
+            this.txtAccessToken.Size = new System.Drawing.Size(463, 22);
             this.txtAccessToken.TabIndex = 7;
             // 
             // label5
@@ -213,7 +213,7 @@
             // 
             this.txtConsumerSecret.Location = new System.Drawing.Point(283, 83);
             this.txtConsumerSecret.Name = "txtConsumerSecret";
-            this.txtConsumerSecret.Size = new System.Drawing.Size(255, 22);
+            this.txtConsumerSecret.Size = new System.Drawing.Size(463, 22);
             this.txtConsumerSecret.TabIndex = 5;
             // 
             // label4
@@ -229,7 +229,7 @@
             // 
             this.txtGetTwettNumber.Location = new System.Drawing.Point(283, 245);
             this.txtGetTwettNumber.Name = "txtGetTwettNumber";
-            this.txtGetTwettNumber.Size = new System.Drawing.Size(255, 22);
+            this.txtGetTwettNumber.Size = new System.Drawing.Size(112, 22);
             this.txtGetTwettNumber.TabIndex = 3;
             // 
             // label3
@@ -245,7 +245,7 @@
             // 
             this.txtConsumerKey.Location = new System.Drawing.Point(283, 37);
             this.txtConsumerKey.Name = "txtConsumerKey";
-            this.txtConsumerKey.Size = new System.Drawing.Size(255, 22);
+            this.txtConsumerKey.Size = new System.Drawing.Size(463, 22);
             this.txtConsumerKey.TabIndex = 1;
             // 
             // label2

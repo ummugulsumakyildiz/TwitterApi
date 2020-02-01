@@ -1,4 +1,6 @@
-﻿namespace TwitterApi.DAO
+﻿using System.Linq;
+
+namespace TwitterApi.DAO
 {
     class AuthInfoDao:BaseDao
     {
@@ -13,6 +15,14 @@
             }
 
             return false;
+        }
+
+        public AuthInfo LastRecord()
+        {
+           var result= baglanti.AuthInfo
+                       .OrderByDescending(a=> a.id) 
+                       .FirstOrDefault();
+            return result;
         }
     }
 }
