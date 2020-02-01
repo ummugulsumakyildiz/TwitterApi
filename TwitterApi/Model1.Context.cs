@@ -26,5 +26,6 @@ namespace TwitterApi
         }
     
         public DbSet<AuthInfo> AuthInfo { get; set; }
+        public DbSet<TweetPost> TweetPost { get; set; }
     }
 }
