@@ -140,3 +140,6 @@ C:\Users\user1\Documents\Visual Studio 2015\Projects\TwitterApi\TwitterApi\bin\D
 C:\Users\user1\Documents\Visual Studio 2015\Projects\TwitterApi\TwitterApi\bin\Debug\Tweetinvi.WebLogic.pdb
 C:\Users\user1\Documents\Visual Studio 2015\Projects\TwitterApi\TwitterApi\obj\Debug\TwitterApi.csprojAssemblyReference.cache
 C:\Users\user1\Documents\Visual Studio 2015\Projects\TwitterApi\TwitterApi\obj\Debug\TwitterApi.exe.config
+C:\Users\user1\Documents\Visual Studio 2015\Projects\TwitterApi\TwitterApi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user1\Documents\Visual Studio 2015\Projects\TwitterApi\TwitterApi\bin\Debug\EntityFramework.Utilities.dll
+C:\Users\user1\Documents\Visual Studio 2015\Projects\TwitterApi\TwitterApi\bin\Debug\EntityFramework.SqlServer.xml
