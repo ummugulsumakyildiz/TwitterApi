@@ -19,6 +19,7 @@
     <Property Name="tweet" Type="text" />
     <Property Name="username" Type="varchar" MaxLength="50" />
     <Property Name="created_at" Type="datetime" />
+    <Property Name="type" Type="nchar" MaxLength="50" />
   </EntityType>
   <EntityContainer Name="TwitterModelStoreContainer">
     <EntitySet Name="AuthInfo" EntityType="Self.AuthInfo" Schema="dbo" store:Type="Tables" />

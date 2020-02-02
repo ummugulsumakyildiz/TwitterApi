@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panelPaylas = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panelTweetAl = new System.Windows.Forms.Panel();
@@ -37,6 +36,10 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.butonKaydet = new System.Windows.Forms.Button();
             this.txtTokenSecret = new System.Windows.Forms.TextBox();
@@ -49,31 +52,25 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtConsumerKey = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.lblInfo = new System.Windows.Forms.Label();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             this.panelPaylas.SuspendLayout();
+            this.panelTweetAl.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelPaylas
             // 
-            this.panelPaylas.Controls.Add(this.label1);
             this.panelPaylas.Controls.Add(this.richTextBox1);
             this.panelPaylas.Controls.Add(this.button1);
             this.panelPaylas.Location = new System.Drawing.Point(3, 3);
             this.panelPaylas.Name = "panelPaylas";
             this.panelPaylas.Size = new System.Drawing.Size(689, 157);
             this.panelPaylas.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(526, 124);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
             // 
             // richTextBox1
             // 
@@ -95,6 +92,7 @@
             // 
             // panelTweetAl
             // 
+            this.panelTweetAl.Controls.Add(this.listBox2);
             this.panelTweetAl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTweetAl.Location = new System.Drawing.Point(3, 3);
             this.panelTweetAl.Name = "panelTweetAl";
@@ -114,6 +112,7 @@
             this.tabControl1.Size = new System.Drawing.Size(844, 638);
             this.tabControl1.TabIndex = 3;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
             // 
             // tabPage1
             // 
@@ -139,6 +138,10 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.listBox1);
+            this.tabPage3.Controls.Add(this.button2);
+            this.tabPage3.Controls.Add(this.label7);
+            this.tabPage3.Controls.Add(this.textBox1);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -146,6 +149,41 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Tweet Oku";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(3, 65);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(830, 532);
+            this.listBox1.TabIndex = 3;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(508, 22);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Getir";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(74, 25);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(84, 17);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Kullanıcı Adı";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(189, 25);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(302, 22);
+            this.textBox1.TabIndex = 0;
             // 
             // tabPage4
             // 
@@ -208,6 +246,7 @@
             this.label5.Size = new System.Drawing.Size(93, 17);
             this.label5.TabIndex = 6;
             this.label5.Text = "AccessToken";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtConsumerSecret
             // 
@@ -257,23 +296,46 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "OAuthConsumerKeyString";
             // 
+            // lblInfo
+            // 
+            this.lblInfo.AutoSize = true;
+            this.lblInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblInfo.Location = new System.Drawing.Point(384, 657);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(93, 32);
+            this.lblInfo.TabIndex = 4;
+            this.lblInfo.Text = "label7";
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 16;
+            this.listBox2.Location = new System.Drawing.Point(3, 3);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(824, 596);
+            this.listBox2.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 652);
+            this.ClientSize = new System.Drawing.Size(886, 698);
+            this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "TwitterApi";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelPaylas.ResumeLayout(false);
-            this.panelPaylas.PerformLayout();
+            this.panelTweetAl.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -281,7 +343,6 @@
         private System.Windows.Forms.Panel panelPaylas;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelTweetAl;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -299,6 +360,12 @@
         private System.Windows.Forms.TextBox txtTokenSecret;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button butonKaydet;
+        private System.Windows.Forms.Label lblInfo;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox2;
     }
 }
 

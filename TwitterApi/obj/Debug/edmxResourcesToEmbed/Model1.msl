@@ -16,6 +16,7 @@
     <EntitySetMapping Name="TweetPost">
       <EntityTypeMapping TypeName="TwitterModel.TweetPost">
         <MappingFragment StoreEntitySet="TweetPost">
+          <ScalarProperty Name="type" ColumnName="type" />
           <ScalarProperty Name="created_at" ColumnName="created_at" />
           <ScalarProperty Name="username" ColumnName="username" />
           <ScalarProperty Name="tweet" ColumnName="tweet" />

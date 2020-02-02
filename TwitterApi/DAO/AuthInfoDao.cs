@@ -17,7 +17,7 @@ namespace TwitterApi.DAO
             return false;
         }
 
-        public AuthInfo LastRecord()
+        public AuthInfo LastRecord() 
         {
            var result= baglanti.AuthInfo
                        .OrderByDescending(a=> a.id) 
