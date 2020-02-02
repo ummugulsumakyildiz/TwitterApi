@@ -246,6 +246,7 @@
             this.label5.Size = new System.Drawing.Size(93, 17);
             this.label5.TabIndex = 6;
             this.label5.Text = "AccessToken";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtConsumerSecret
             // 

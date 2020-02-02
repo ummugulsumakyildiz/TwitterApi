@@ -49,10 +49,6 @@ namespace TwitterApi
             {
                 MessageBox.Show("Lütfen Konfigurasyon menüsünden twitter api bilgileri doldurunuz");
                 tabControl1.SelectedTab = tabPage4;
-                tabControl1.SelectedTab.Enabled = true;
-                var nextTab = tabControl1.TabPages[tabControl1.SelectedIndex -1 ] as TabPage;
-                nextTab.Enabled = false;
-
             }
             
         }
