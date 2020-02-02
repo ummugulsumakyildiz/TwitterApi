@@ -157,8 +157,15 @@ namespace TwitterApi
         {
             var tweets = tweetService.GetTweetsByUsername(textBox1.Text,count); 
             bool saveControl =  tweetDAO.InsertAllPost(tweets, textBox1.Text,"tweet_oku");
+            
             if (saveControl)
             {
+                foreach (var item in tweets)
+                {
+                    listBox1.Items.Add(item.FullText);
+                    listBox1.Items.Add("\n");
+
+                }
                 MessageBox.Show("İşlem Başarılı");
             }
             else
